@@ -17,7 +17,7 @@ router.get('/videos', videoController.index);
 
 
 /*Get Videos page */
-router.get('/videos1', videoController.index1);
+router.get('/videos/1', videoController.index1);
 
 
 
