@@ -3,6 +3,8 @@ var router = express.Router();
 
 var videoController = require('../controllers/videos_controller');
 
+
+
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Lista De Reproduccion'});
@@ -12,6 +14,11 @@ router.get('/', function(req, res) {
 
 /*Get Videos page */
 router.get('/videos', videoController.index);
+
+
+/*Get Videos page */
+router.get('/videos1', videoController.index1);
+
 
 
 module.exports = router;

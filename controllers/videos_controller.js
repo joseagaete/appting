@@ -6,4 +6,10 @@ exports.index = function(req, res) {
   })
 };
 
+exports.index1 = function(req, res) {
+  models.Videos.findAll().then(function(listado) {//la variable //videos contiene la tabla
+    res.render('videos1.ejs', { listado: listado}); //devuelve lo //obtenido con la linea anterior
+  })
+};
+
 
