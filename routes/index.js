@@ -19,6 +19,10 @@ router.get('/videos', videoController.index);
 /*Get Videos page */
 router.get('/videos/1', videoController.index1);
 
+/*Get Videos page */
+router.get('/videos/2', videoController.index2);
+
+
 
 
 module.exports = router;
